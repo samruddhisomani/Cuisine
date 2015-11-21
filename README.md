@@ -6,4 +6,3 @@ Group Members
  - Leon Chen
  - Daniel Lai
  - Andrew Reuben
- - Bejan Sadeghian
