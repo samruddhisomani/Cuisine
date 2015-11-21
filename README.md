@@ -8,10 +8,10 @@ Group Members
  - Andrew Reuben
 
 Figure out tokenizing
--Write Custom Analyzer
+- Write Custom Analyzer
 
 Pipeline Approaches
---Cluster/Logistic
---Cluster/LDA
+-- Cluster/Logistic
+-- Cluster/LDA
 
 
