@@ -6,3 +6,12 @@ Group Members
  - Leon Chen
  - Daniel Lai
  - Andrew Reuben
+
+Figure out tokenizing
+-Write Custom Analyzer
+
+Pipeline Approaches
+--Cluster/Logistic
+--Cluster/LDA
+
+
