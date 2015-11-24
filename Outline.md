@@ -37,6 +37,7 @@
 - Support Vector Machine?
 - Random Forest?
 - XGBoost? 
+- Neural Network?
 
 # Pipeline Models
 - DecisionTree/RandomForest--> Cooperative Ensemble
