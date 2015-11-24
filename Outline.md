@@ -32,7 +32,7 @@
 
 # One Shot Models (Do these models miss the same things?)
 - Naive Bayes: 78% Accuracy
-- Unregularized Logistic Regression
+- Unregularized Logistic Regression: 78% Accuracy
 - Regularized Logistic Regression?
 - Support Vector Machine?
 - Random Forest?
