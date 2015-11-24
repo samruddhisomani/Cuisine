@@ -1,4 +1,4 @@
-import pandas
+import pandas as pd
 
 def balanced_samples(number,classes,dfO,columns,group):
     df=pd.DataFrame(columns=columns)
