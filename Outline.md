@@ -41,4 +41,4 @@
 # Pipeline Models
 - DecisionTree/RandomForest--> Cooperative Ensemble
 - PCA/LDA-->Logistic Regression
-- RandomForestEmbedding --> Piecewise Modeling
+- RandomForestEmbedding --> Regularized Logistic Regression
