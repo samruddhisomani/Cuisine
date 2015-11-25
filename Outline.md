@@ -34,12 +34,12 @@
 - Naive Bayes: 78% Accuracy
 - Unregularized Logistic Regression: 78% Accuracy
 - Regularized Logistic Regression?
-- Support Vector Machine?
-- Random Forest?
-- XGBoost? 
+- Support Vector Machine? 72%
+- Random Forest? 42%
+- XGBoost? 76%
 - Neural Network?
 
 # Pipeline Models
-- DecisionTree/RandomForest--> Cooperative Ensemble
+- DecisionTree--> Cooperative Ensemble
 - PCA/LDA-->Logistic Regression
 - RandomForestEmbedding --> Regularized Logistic Regression
