@@ -36,7 +36,7 @@
 - Regularized Logistic Regression?
 - Support Vector Machine? 72%
 - Random Forest? 42%
-- XGBoost? 72%
+- XGBoost? 76%
 - Neural Network?
 
 # Pipeline Models
