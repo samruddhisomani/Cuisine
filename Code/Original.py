@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 import pandas as pd
 import sklearn.feature_extraction.text
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
