@@ -32,14 +32,14 @@
 
 # One Shot Models (Do these models miss the same things?)
 - Naive Bayes: 78% Accuracy
-- Unregularized Logistic Regression: 78% Accuracy
-- Regularized Logistic Regression?
-- Support Vector Machine? 72%
-- Random Forest? 42%
-- XGBoost? 76%
+- Unregularized Logistic Regression: 78%
+- Regularized Logistic Regression? 78%
+- Support Vector Machine? 78%
+- Random Forest? 42%-->Takes forever
+- XGBoost? 72%-->Takes forever
 - Neural Network?
 
 # Pipeline Models
 - DecisionTree--> Cooperative Ensemble
-- PCA/LDA-->Logistic Regression
-- RandomForestEmbedding --> Regularized Logistic Regression
+- PCA/LDA-->Logistic Regression (Sparse is good. PCA destroys sparse.)
+- RandomForestEmbedding --> Regularized Logistic Regression (Will probably skip. Random forests are no fun).
