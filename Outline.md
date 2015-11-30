@@ -22,6 +22,7 @@
 # Exploratory
 - Most Common Cuisine/Most Common Ingredient
   - Unbalanced Classes
+- Word Clouds of Top Cuisines
 
 # Design Choices
 - Whether to tokenize by word?
