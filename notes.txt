@@ -1,0 +1,10 @@
+balanced classes at 500: 68% accuracy
+
+balanced classes at 1000
+: 72%
+
+#doesn't handle high d very well
+random forest: Grid Search over max_depth and n_estimators
+42%?
+
+
