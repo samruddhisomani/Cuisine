@@ -17,4 +17,10 @@ v=CountVectorizer(preprocessor=None,tokenizer=None,analyzer=no_tokenizer,min_df=
 
 x=v.fit_transform(ingredients)
 
-v.get_feature_names()
+test=pd.read_json("../Data/test.json")
+
+ingredientst=test['ingredients']
+
+xtest=v.transform(ingredientst)
+
+x.max()

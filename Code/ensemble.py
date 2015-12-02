@@ -7,6 +7,8 @@ Created on Tue Dec 01 10:13:19 2015
 
 execfile('Original.py')
 
+from sam import SubFile
+
 log=pd.read_csv('../Submissions/sam_log_sub1.csv').set_index('id')
 xgb=pd.read_csv('../Submissions/xgb_sub10.csv').set_index('id')
 svm=pd.read_csv('../Submissions/svr_sub1.csv').set_index('id')
@@ -42,3 +44,7 @@ def winner(x):
             return x[1]
    
 answers=predictions.apply(winner,axis=1)
+
+SubFile(test['id'].reset_index(),pd.Series(answers),'../Submissions/ensemble.csv')
+
+pd.concat([test['id'],answers],axis=1)
