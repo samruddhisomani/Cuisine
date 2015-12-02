@@ -12,10 +12,12 @@ xgb=pd.read_csv('../Submissions/xgb_sub10.csv').set_index('id')
 svm=pd.read_csv('../Submissions/svr_sub1.csv').set_index('id')
 nb=pd.read_csv('../Submissions/NB_predictions.csv').set_index('id')
 pca=pd.read_csv('../Submissions/sam_pca_sub1.csv').set_index('id')
+lda=pd.read_csv('../Submissions/lda_preds.csv').set_index('id')
+sgd_svm=pd.read_csv('../Submissions/leon_sgd_hinge.csv').set_index('id')
 
-df=pd.concat([log,xgb,svm,nb,pca],axis=1)
+df=pd.concat([log,xgb,svm,nb,pca,lda,sgd_svm],axis=1)
 
-df.columns=['log','xgb','svm','nb','pca']
+df.columns=['log','xgb','svm','nb','pca','lda','sgd_svm']
 
 #computing unaminity
 mask=df.apply(lambda x: min(x) == max(x),1)
