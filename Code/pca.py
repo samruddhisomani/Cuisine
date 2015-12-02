@@ -45,3 +45,14 @@ cv=GridSearchCV(balanced_log,params)
 
 cv.fit(x,cuisine)
 
+
+
+
+#Hinge Loss
+sgd1=SGDClassifier(class_weight='auto',loss='hinge',random_state=0,warm_start=True)#cv over n_iters/alpha
+sgd1.fit(x,cuisine)
+sgd_hinge_pred = sgd1.predict(lr_test)     #countvectorizer fitted test set
+results = pd.DataFrame()
+results["id"] = test["id"]
+results["cuisine"] = sgd_hinge_pred 
+#results.to_csv("leon_sgd_hinge.csv",index=False)
