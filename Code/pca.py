@@ -137,7 +137,6 @@ def ConfusionMatrix(y_true,y_pred,kind):
     y_t=pd.Series(y_true,name='Truth')
     y_p=pd.Series(y_pred,name='Predictions')
     df=pd.crosstab(index=y_t, columns=y_p,dropna=False).fillna(0)
-
     if kind=='original':
         df_new=df
     elif kind=='precision':
@@ -157,3 +156,14 @@ def hmwrapper(cm,filename):
     h.tight_layout()
     h.set_size_inches(8,5.5)
     h.savefig(filename,bbox_inches='tight',dpi=100)
+
+
+#Hinge Loss
+sgd1=SGDClassifier(class_weight='auto',loss='hinge',random_state=0,warm_start=True)#cv over n_iters/alpha
+sgd1.fit(x,cuisine)
+sgd_hinge_pred = sgd1.predict(lr_test)     #countvectorizer fitted test set
+results = pd.DataFrame()
+results["id"] = test["id"]
+results["cuisine"] = sgd_hinge_pred 
+#results.to_csv("leon_sgd_hinge.csv",index=False)
+
