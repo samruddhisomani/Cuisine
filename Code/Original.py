@@ -6,6 +6,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 train=pd.read_json("../Data/train.json")
+w=pd.read_csv("../Data/weights4.csv",index_col=0)
+weights=w['weight'].to_dict()
 
 ingredients=train['ingredients']
 cuisine=train['cuisine']
@@ -23,4 +25,3 @@ ingredientst=test['ingredients']
 
 xtest=v.transform(ingredientst)
 
-x.max()
