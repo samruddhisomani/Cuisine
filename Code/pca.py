@@ -167,3 +167,12 @@ results["id"] = test["id"]
 results["cuisine"] = sgd_hinge_pred 
 #results.to_csv("leon_sgd_hinge.csv",index=False)
 
+<<<<<<< Updated upstream
+=======
+#for heatmap
+sgd1.fit(X_train,y_train)
+sgd1_pred = sgd1.predict(X_test)
+sgd1_cm = confusion_matrix(y_test,sgd1_pred)
+sgd1_df = ConfusionMatrix(y_test,sgd1_pred,'original')
+heatmap(sgd1_cm,xticklabels=sgd1_df.index,yticklabels=sgd1_df.index)
+>>>>>>> Stashed changes

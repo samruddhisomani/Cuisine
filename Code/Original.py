@@ -13,7 +13,7 @@ cuisine=train['cuisine']
 def no_tokenizer(doc):
     return doc
 
-v=CountVectorizer(preprocessor=None,tokenizer=None,analyzer=no_tokenizer,min_df=5)
+v=CountVectorizer(preprocessor=None,tokenizer=None,analyzer=no_tokenizer)
 
 x=v.fit_transform(ingredients)
 
