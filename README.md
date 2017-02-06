@@ -7,5 +7,6 @@ Group Members
  - Daniel Lai
  - Andrew Reuben
 
-[Presentation](bit.ly/nofreelunch_APM15)
+[Presentation](bit.ly/nofreelunch_APM15)  
+[Paper](bit.ly/APM_nofreelunch_paper)
 
